@@ -1,0 +1,41 @@
+.logo {
+    height: 32px;
+    width: 125px;
+    @include lg {
+        width: 200px;
+        min-width: 125px;
+    }
+}
+.rounded-small {
+    padding: 0.25rem;
+}
+.nav-shadow {
+    @include lg {
+        box-shadow: 0px 2px 40px 0px #0068ff1a;
+        border-radius: 50rem;
+    }
+}
+.nav-input {
+    @include lg {
+        width: 425px;
+    }
+}
+.nav-btn {
+    max-height: 60px;
+    white-space: nowrap;
+}
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    &::after {
+        content: "\e313";
+        font-family: "Material Symbols Outlined";
+        border: none;
+    }
+}
+.marker {
+    font-family: poppins;
+    min-width: 5px;
+    min-height: 5px;
+    padding:2px 4px;
+}

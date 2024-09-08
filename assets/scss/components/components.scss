@@ -1,0 +1,9 @@
+.rounded-large {
+    border-radius: 100px;
+}
+.rounded-middle {
+    border-radius: 80px;
+    &-top-right {
+        border-top-right-radius: 80px;
+    }
+}

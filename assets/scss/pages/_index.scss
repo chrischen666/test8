@@ -1,0 +1,160 @@
+.carouse {
+    @media (max-width: 991px) {
+        border-radius: 0;
+    }
+    height: 400px;
+    @include media-breakpoint-up(lg) {
+        height: calc(80vh - 110px);
+    }
+    @include media-breakpoint-up(xl) {
+        height: calc(90vh - 110px);
+    }
+    @include media-breakpoint-up(xxl) {
+        height: calc(100vh - 110px);
+    }
+}
+.container-carousel {
+    max-width: 1600px;
+    @include media-breakpoint-up(lg) {
+        width: calc(100vw - 80px);
+    }
+    @include media-breakpoint-up(xl) {
+        width: calc(100vw - 80px);
+    }
+    @include media-breakpoint-up(xxl) {
+        width: calc(100vw - 100px);
+    }
+}
+.shadow {
+    box-shadow: 0px 10px 15px -3px #0000001a;
+}
+.btn-check:checked + .btn {
+    background-color: $primary-100;
+    color: $neutral-0;
+}
+.btn-check:hover + .btn {
+    background-color: $primary-100;
+    color: $neutral-0;
+}
+.btn-main {
+    color: $neutral-80;
+}
+.btn-group-main {
+  display: flex;
+  gap: 12px;
+
+    @media (max-width: 991px) {
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+}
+
+.card {
+    @include lg {
+        &-primary {
+            width: calc(50% - 12px);
+        }
+        &-teacher {
+            width: 44px;
+            height: 44px;
+            border-radius: 70px;
+        }
+    }
+}
+
+.py-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.line-through {
+    text-decoration: line-through;
+}
+.f-blue {
+    color: #0068ff;
+}
+.author img {
+    width: 44px;
+    height: 44px;
+}
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.text-overlay {
+    padding: 8px 12px;
+    background-color: #e5f4ff;
+    letter-spacing: 0.28px;
+    border-radius: 100px;
+}
+
+.swiper-container,.swiper-container2 {
+    width: 100%;
+    overflow: hidden;
+}
+.swiper-pagination {
+    position: static;
+    margin-top: 24px;
+}
+.swiper-pagination-bullet-active {
+    width: 24px;
+    border-radius: 20px;
+}
+
+.crowdfunding{
+  background-image: url("../assets/images/sadness.png");
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.hot-items{
+  padding: 120px 0;
+  background-image: url("../assets/images/sadness-2.png");
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.sort{
+  background-color: $primary-100;
+  padding: 20px;
+  
+  @include lg{
+    margin: 6em 6.6em;
+  padding: 4em 9em;
+  border-radius: 80px;
+  }
+  .card{
+    background: #FFFFFF;
+    border-radius: 20px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    line-height: 21px;
+    color: #6e7485;
+    &>:nth-child(1){
+    border-radius: 16px;
+    padding: 16px;
+    margin-right: 16px;
+    }
+  }
+}
+
+.intro{
+  overflow-x: hidden;
+  &-tec{
+    height: 400px;
+    background-image: url("../assets/images/teacher-3.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  .card-body{
+    box-shadow: 0px 25px 50px -12px #0000001F;
+  }
+}

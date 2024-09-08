@@ -1,0 +1,118 @@
+<header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid container-lg py-1 px-7 rounded-pill nav-shadow">
+        <div class="d-flex align-items-center gap-5">
+            <a href="#" 
+                ><img
+                    src="../assets/images/logo.png"
+                    alt="logo"
+                    class="logo"
+            /></a>
+
+            <ul
+                class="navbar-nav justify-content-end flex-gro w-1 pe-3 d-lg-block d-none"
+            >
+                <li class="nav-item dropdown ">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="offcanvasNavbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                    >
+                        探索
+                    </a>
+                    <ul
+                        class="dropdown-menu"
+                        aria-labelledby="offcanvasNavbarDropdown"
+                    >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                            <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider" />
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#"
+                                >Something else here</a
+                            >
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="position-relative d-none d-lg-block">
+                <span
+                    class="material-symbols-outlined position-absolute ms-1 top-50 start-0 translate-middle-y"
+                >
+                    search
+                </span>
+                <input
+                    class="form-control me-2 py-4 lh-sm ps-7 rounded-4 nav-input"
+                    type="search"
+                    placeholder="搜尋各種音樂、數學、程式及設計課程"
+                    aria-label="Search"
+                />
+                <button
+                    class="btn btn-primary position-absolute end-0 top-50 translate-middle-y px-3 py-2 me-4 rounded-3"
+                    type="submit"
+                >
+                    搜尋
+                </button>
+            </form>
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+            <span class="material-symbols-outlined position-relative">
+                notifications
+                <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-circle bg-primary rounded-small"
+                    ><span class="visually-hidden"></span
+                ></span>
+            </span>
+
+            <span class="material-symbols-outlined position-relative">
+                shopping_cart
+                <span
+                    class="position-absolute top-0 start-100 translate-middle bg-primary border border-primary rounded-circle fs-8 text-white marker"
+                    >2
+                    <span class="visually-hidden text-white">1</span>
+                </span>
+            </span>
+            <button
+                type="button"
+                class="btn btn-primary nav-btn py-3 px-5 rounded-3 d-none d-lg-block"
+            >
+                登入 / 註冊
+            </button>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                class="offcanvas offcanvas-end"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+            >
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        Offcanvas
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close text-reset"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="offcanvas-body"></div>
+            </div>
+        </div>
+    </div>
+</header>

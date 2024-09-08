@@ -1,0 +1,42 @@
+body {
+    // font-family: "Newsreader", "Noto Serif TC";
+    // background-color: $info-10;
+    // color: $success-100;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+p {
+    letter-spacing: 0.02em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0.02em;
+}
+
+.title.body{
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+.subtitle{
+    font-size: 14px;
+    font-weight: bold;
+}
+.body2{
+    font-size: 14px;
+}
+.tiny{
+    font-size: 12px;
+}
